@@ -6,7 +6,7 @@ export const showNextPhoto = () => {
     };
 };
 
-export const showPrevPhoto  = () =>  {
+export const showPrevPhoto  = () => {
     return {
         type: SHOW_PREV_PHOTO,
     };

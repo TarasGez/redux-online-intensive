@@ -19,7 +19,7 @@ export default class Gallery extends Component {
         this.forceUpdate();
     }
 
-    _showPrewPhoto = () => {
+    _showPrevPhoto = () => {
         store.dispatch(showPrevPhoto());
         this.forceUpdate();
     }
@@ -47,7 +47,7 @@ export default class Gallery extends Component {
             <section className = { Styles.gallery }>
                 <img src = { photo.url } />
                 <div>
-                    <button onClick = { this._showPrewPhoto }>←</button>
+                    <button onClick = { this._showPrevPhoto }>←</button>
                     <button
                         className = { buttonActiveStyle1 }
                         value = '0'
