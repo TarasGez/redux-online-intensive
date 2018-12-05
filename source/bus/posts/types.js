@@ -1,6 +1,6 @@
 export const types = {
     // Sync
-    FILL_POSTS: 'FILL_POSTS',
+    FILL_POSTS:  'FILL_POSTS',
     CREATE_POST: 'CREATE_POST',
 
     // Async
