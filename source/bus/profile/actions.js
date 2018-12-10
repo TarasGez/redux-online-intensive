@@ -2,7 +2,7 @@
 import { types } from './types';
 
 export const profileActions = {
-    acfillProfiletion: (profile) => {
+    fillProfile: (profile) => {
         return {
             type:    types.FILL_PROFILE,
             payload: profile,
