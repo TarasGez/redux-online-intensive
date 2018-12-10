@@ -10,9 +10,9 @@ export const authActions = {
     },
 
     // Async
-    signupAsync: (userDate) => {
+    signupAsync: (userData) => {
         return {
-            type: types.SIGNUP_ASYNC,
+            type:    types.SIGNUP_ASYNC,
             payload: userData,
         };
     },
