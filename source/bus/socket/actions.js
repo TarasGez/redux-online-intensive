@@ -15,10 +15,21 @@ export const socketActions = {
     },
     listenPosts: () => (dispatch, getState) => {
         socket.on('create', (event) => {
+            console.log('event create', JSON.parse(event));
+
             const { data: post } = JSON.parse(event);
 
             dispatch(postsActions.createPost(post));
         });
+
+        socket.on('remove', (event) => {
+            console.log('event remove', JSON.parse(event));
+
+            const { data: post } = JSON.parse(event);
+
+            dispatch(postsActions.removePost(post));
+        });
+
         socket.on('like', (event) => {
             const { data, meta } = JSON.parse(event);
 
