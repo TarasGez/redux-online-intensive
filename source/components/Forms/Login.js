@@ -21,7 +21,10 @@ const mapDispatchToProps = {
     loginAsync: authActions.loginAsync,
 };
 
-@connect(mapStateToProps, mapDispatchToProps)
+@connect(
+    mapStateToProps,
+    mapDispatchToProps
+)
 export default class LoginForm extends Component {
 
     _submitLoginForm = (credentials) => {

@@ -5,12 +5,16 @@ import { takeEvery, all, call } from 'redux-saga/effects';
 import { types } from '../types';
 
 // Workers
-import { fetchPosts, createPost } from './workers';
+import { updateName, updateAvatar } from './workers';
 
-export function* watchWorker () {
-    yield takeEvery(types.TYPE, worker);
+export function* watchUpdateName () {
+    yield takeEvery(types.UPDATE_NAME_ASYNC, updateName);
 }
 
-export function* watchDomain () {
-    yield all([call(watchWorker)]);
+export function* watchUpdateAvatar () {
+    yield takeEvery(types.UPDATE_AVATAR_ASYNC, updateAvatar);
+}
+
+export function* watchProfile () {
+    yield all([call(watchUpdateName), call(watchUpdateAvatar)]);
 }
