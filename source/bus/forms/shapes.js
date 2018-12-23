@@ -47,7 +47,7 @@ export const signup = {
 
 export const newPassword = {
     shape: {
-        oldPassword: '',
+        oldPassword: '12345',
         newPassword: '',
     },
     schema: object().shape({

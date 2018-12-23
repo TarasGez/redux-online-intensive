@@ -30,10 +30,10 @@ const mapDispatchToProps = profileActions;
     mapDispatchToProps
 )
 export default class Profile extends Component {
-    static defaultProps = {
-        // Actions
-        updateAvatarAsync: () => {},
-    };
+    // static defaultProps = {
+    //     // Actions
+    //     updateAvatarAsync: () => {},
+    // };
 
     _submitUserInfo = (userInfo) => {
         const { updateNameAsync, updateAvatarAsync } = this.props;
