@@ -15,6 +15,21 @@ const userProfile = {
     token,
 };
 
+const users = [
+    {
+        id:        'TEST_ID2',
+        avatar:    'TEST_AVATAR2',
+        firstName: 'Vasya',
+        lastName:  'Pupkin',
+    },
+    {
+        id:        'TEST_ID3',
+        avatar:    'TEST_AVATAR3',
+        firstName: 'Alisa',
+        lastName:  'Selezneva',
+    }
+];
+
 const credentials = {
     email:    'test@email.com',
     password: '1111',
@@ -48,6 +63,7 @@ const fetchResponseFail400 = {
 const url = 'https://www.url.com';
 
 global.__ = {
+    users,
     userProfile,
     errorMessage,
     token,
