@@ -19,7 +19,7 @@ export function* fetchUsers () {
 
         yield put(usersActions.fillUsers(users));
     } catch (error) {
-        yield put(uiActions.emitError(error, `fetchUsers worker -> ${error.message}`));
+        yield put(uiActions.emitError(error, `fetchUsers worker`));
     } finally {
         yield put(uiActions.stopFetching());
     }
